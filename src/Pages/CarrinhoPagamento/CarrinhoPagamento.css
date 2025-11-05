@@ -1,0 +1,113 @@
+.pagamento-wrapper {
+  position: relative;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding-top: 10rem;
+}
+
+
+.pagamento-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.medicamentos-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.medicamento-card {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.medicamento-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.detalhes h3 {
+  margin: 0;
+}
+
+.detalhes p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.medicamento-card.receita {
+  border-left: 4px solid #55a0f0;
+}
+
+.medicamento-card.balcao {
+  border-left: 4px solid #0563A9;
+  position: relative;
+}
+
+.btn-remove {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: linear-gradient(135deg, #e74d4d 0%, #860909 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.resumo-pedido {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.itens-resumo div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.botoes-pagamento button {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.botoes-pagamento button.cancelar {
+    background: linear-gradient(135deg, #860909 0%, #e74d4d 100% );
+  color: #fff;
+}
+
+.botoes-pagamento button.CartaoCOR {
+ background: linear-gradient(135deg, #0563A9, #55a0f0);
+  color: #fff;
+}
+.botoes-pagamento button.PixCor {
+  background: linear-gradient(135deg, #55a0f0,#0563A9);
+  color: #fff;
+}

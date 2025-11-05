@@ -1,0 +1,267 @@
+
+
+
+.contact.show {
+  opacity: 1;
+  transform: translateY(0);
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 120px; 
+  background-color: #84BFFF;
+
+  
+}
+
+.contact-header img {
+  width: 30%;
+  height: 600px;
+  object-fit: contain;
+  
+}
+
+
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  margin: 0 0;
+  flex: none;
+  max-width: 500px;
+}
+
+.contact-text h6 {
+  font-size: 14px;
+  color: #6c6c6c;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.contact-text h1 {
+  font-size: 40px;
+ 
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  line-height: 1.1;
+  max-width: 400px;    
+  margin-left: auto;    
+  margin-right: auto;   
+  font-weight: 700;
+  color: #1e293b;
+ 
+ 
+  
+}
+
+.contact-text p {
+  font-size: 17px;
+  color: #3a3a3a;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 400px;      
+  line-height: 1.4;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0px 40px; 
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: -80px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  min-height: 700px; 
+  
+  
+}
+
+.contact-box {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 40px 30px; 
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeLeft 1s ease forwards;
+  min-height: 600px; 
+}
+
+
+
+.contact-box h1 {
+  margin-bottom: 10px;
+  
+   font-size: 2.5rem;
+
+}
+
+.contact-box p {
+  margin: 5px 0;
+}
+
+.contact-info {
+  margin: 15px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #0563A9;
+  outline: none;
+}
+
+.contact-form button {
+  background: #0563A9;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #0563A9;
+  transform: scale(1.05);
+}
+
+.btn {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 250px;
+  height: 55px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #0563A9, #55a0f0);
+  color: #ffffff;
+  transition: all 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+}
+
+
+
+.contact-map {
+  flex: 2;
+  min-width: 400px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeRight 1s ease forwards;
+  min-height: 600px; 
+}
+.contact-box,
+.contact-map {
+  flex: 0 1 600px; 
+  max-width: 110%;
+}
+
+.contact-map iframe {
+width: 100%;           
+  width: 500px;
+  height: 580px;
+  aspect-ratio: 16 / 9;  
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-shape-divider-bottom-1759704000 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.custom-shape-divider-bottom-1759704000 svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 96px;
+}
+
+.custom-shape-divider-bottom-1759704000 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-header img {
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .contact-text{
+    margin: auto;
+  }
+}

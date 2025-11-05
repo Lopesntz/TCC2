@@ -1,0 +1,22 @@
+.geometric-image {
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.geometric-image.top-right {
+  top: -100px;
+  right: -100px;
+  width: 600px;
+  height: 600px;
+  
+}
+
+.geometric-image.bottom-left {
+  bottom: -150px;
+  left: -150px;
+  width: 600px;
+  height: 600px;
+  
+}

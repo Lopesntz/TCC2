@@ -1,0 +1,115 @@
+
+.information-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: #84BFFF;
+  min-height: 50vh;
+  margin-top: 100px;
+}
+
+.information-card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('/public/images/img/insastisfacao.png');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 4rem;
+  border-radius: 4rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+  width: 1400px;
+  height: 600px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.information-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.information-card h2 {
+  font-weight: bold;
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
+}
+
+.information-card p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 5rem;
+}
+
+.circles-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;       
+  justify-content: center; 
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+  cursor: pointer;
+}
+.circle span {
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.circle span svg {
+  width: 32px;
+  height: 32px;
+  color: #000;
+}
+
+.circle.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.circle:hover {
+  transform: scale(1.2);
+  background: #00bfff;
+  transition: all 0.3s ease;
+}
+
+
+
+.custom-shape-divider-top-1759712501 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1759712501 svg {
+    position: relative;
+    display: block;
+    width: calc(176% + 1.3px);
+    height: 285px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1759712501 .shape-fill {
+    fill: #FFFFFF;
+}

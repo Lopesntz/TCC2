@@ -1,0 +1,343 @@
+.carrinho-confirmacao {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.logo h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tempo {
+  background-color: rgba(255,255,255,0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.main-container {
+  flex: 1;
+  padding: 2rem;
+  padding-top: 10rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  
+}
+.fundo-totem-wrapper{
+position: fixed;
+ width: 100%;
+ filter: blur(16px);
+  background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  height: 100%;
+}
+
+.medicamentos-section {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  overflow-y: auto;
+}
+
+.section-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #0563A9;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: #0563A9;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.balcao-header {
+  margin-top: 3rem;
+  border-bottom-color: #0563A9;
+}
+
+.balcao-header h2 {
+  color: #0563A9;
+}
+
+.medicamentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.medicamento-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+.medicamento-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+}
+
+.medicamento-card.receita {
+  border-left: 4px solid #0563A9;
+  background: linear-gradient(135deg, #fff 0%, #f8fff8 100%);
+}
+
+.medicamento-card.balcao {
+  border-left: 4px solid #0563A9;
+  background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+}
+
+.medicamento-image {
+  flex-shrink: 0;
+}
+
+.medicamento-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.medicamento-details {
+  flex: 1;
+}
+
+.medicamento-details h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.medicamento-details p {
+  margin: 0 0 1rem 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.medicamento-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0563A9;
+}
+
+.btn-remove {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: linear-gradient(135deg, #e74d4d 0%, #860909 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.btn-remove:hover {
+ background: linear-gradient(135deg, #e74d4d 0%, #860909 100%);
+  transform: scale(1.1);
+}
+
+.sidebar-resumo {
+  background-color: white;
+  border-radius: 16px;
+  padding: 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.resumo-container {
+  padding: 2rem;
+}
+
+.resumo-container h3 {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.resumo-items {
+  margin-bottom: 2rem;
+}
+
+.resumo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.resumo-item:last-child {
+  border-bottom: none;
+}
+
+.resumo-item.total {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0563A9;
+  border-top: 2px solid #0563A9;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-adicionar-medicamentos {
+  padding: 1rem;
+  background: linear-gradient(135deg, #0563A9, #55a0f0);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-adicionar-medicamentos:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
+
+.btn-finalizar-pedido {
+  padding: 1rem;
+  background: linear-gradient(135deg, #4888cc, #05497e);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-finalizar-pedido:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(132, 191, 255, 0.35);
+}
+
+.btn-cancelar-pedido {
+  padding: 1rem;
+  background: linear-gradient(135deg, #e74d4d 0%, #860909 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-cancelar-pedido:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .sidebar-resumo {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 1rem;
+  }
+  
+  .medicamentos-section,
+  .resumo-container {
+    padding: 1.5rem;
+  }
+  
+  .medicamentos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .medicamento-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+  }
+}
+
+
+.medicamentos-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.medicamentos-section::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.medicamentos-section::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.medicamentos-section::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

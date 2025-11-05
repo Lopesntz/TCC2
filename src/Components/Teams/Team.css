@@ -1,0 +1,131 @@
+.team {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+.team-text {
+  flex: 1;
+}
+.team-text span {
+  color: #0563A9;
+}
+
+.team-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.team-text p {
+  max-width: 400px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+
+.employee {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ccc;
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.btn-arrow {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.btn-arrow:hover {
+  transform: translateX(5px);
+  color: #007bff;
+}
+
+
+.team-images {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-photo {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.totem-box {
+  background: #eee;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.totem-box img {
+  width: 120px;
+  display: block;
+  margin: auto;
+}
+
+
+.fade-left, .fade-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-left {
+  transform: translateX(-60px);
+}
+
+.fade-left.visible,
+.fade-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+    
+
+.team-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.team-heading h2 {
+  margin-bottom: 10px;
+}
+
+.team-heading p {
+  margin: 0 auto;
+  max-width: 500px;
+  color: #555;
+}
+
+
+
+
+
+
